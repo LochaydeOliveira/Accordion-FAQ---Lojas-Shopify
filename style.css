@@ -18,24 +18,26 @@ body {
 }
 .accordion-faq-heliva .content-faq {
     position: relative;
-    margin: 10px 20px;
+    margin: 0px 20px;
 }
 .accordion-faq-heliva .content-faq .label-faq {
     position: relative;
-    padding: 10px;
+    padding: 20px;
     background: #2177a8;
     color: #fff;
     cursor: pointer;
     font-size: 18px;
+    border-bottom: solid 1px #38657273;
 
 }
 .accordion-faq-heliva .content-faq .label-faq::before {
-    content: '+';
+    content: "\f078";
     position: absolute;
     right: 20px;
     transform: translate(-50%);
-    font-size: 1.5em ;
+    font-size: 1.2em ;
     font-weight: bold;
+    font-family: "Font Awesome 5 Free";
 }
 .accordion-faq-heliva .content-faq .content-faq-inner{
    position: relative; 
@@ -54,5 +56,6 @@ body {
  }
 
  .accordion-faq-heliva .content-faq.active .label-faq::before {
-    content: '';
+    content: "\f077";
+    font-family: "Font Awesome 5 Free";
 }
