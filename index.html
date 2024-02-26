@@ -4,8 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ loja Shopify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-regular-straight/css/uicons-regular-straight.css'>
 </head>
 <body>
+    <div class="accordion-faq-heliva">
+        <div class="content-faq">
+            <div class="label-faq">Pergunta 01</div>
+            <div class="content-faq-inner">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Accusantium, suscipit 
+                    repudiandae assumenda dicta fugit maiores?
+                    Cupiditate mollitia, qui, nesciunt velit
+                    consequatur delectus, optio quisquam consectetur sapiente ut facere voluptatibus officiis?
+                </p>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Accusantium, suscipit 
+                    repudiandae assumenda dicta fugit maiores?
+                    Cupiditate mollitia, qui, nesciunt velit
+                    consequatur delectus, optio quisquam consectetur sapiente ut facere voluptatibus officiis?
+                </p>                   
+            </div>
+        </div>
+        <div class="content-faq">
+            <div class="label-faq">
+                Pergunta 02
+            </div>
+            <div class="content-faq-inner">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Accusantium, suscipit 
+                    repudiandae assumenda dicta fugit maiores?
+                    Cupiditate mollitia, qui, nesciunt velit
+                    consequatur delectus, optio quisquam consectetur sapiente ut facere voluptatibus officiis?
+                </p>                
+            </div>
+        </div>
+        <div class="content-faq">
+            <div class="label-faq">
+                Pergunta 03
+            </div>
+            <div class="content-faq-inner">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Accusantium, suscipit 
+                    repudiandae assumenda dicta fugit maiores?
+                    Cupiditate mollitia, qui, nesciunt velit
+                    consequatur delectus, optio quisquam consectetur sapiente ut facere voluptatibus officiis?
+                </p>                
+            </div>
+        </div>
+        <div class="content-faq">
+            <div class="label-faq">
+                Pergunta 04
+            </div>
+            <div class="content-faq-inner">
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur 
+                    adipisicing elit. Accusantium, suscipit 
+                    repudiandae assumenda dicta fugit maiores?
+                    Cupiditate mollitia, qui, nesciunt velit
+                    consequatur delectus, optio quisquam consectetur sapiente ut facere voluptatibus officiis?
+                </p>                
+            </div>
+        </div>
+    </div>
+    <script>
+        const accordionFaqHeliva = document.getElementsByClassName('content-faq');
+    
+        for (let i = 0; i < accordionFaqHeliva.length; i++){
+            accordionFaqHeliva[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            });
+        };
+    </script>
     
 </body>
 </html>

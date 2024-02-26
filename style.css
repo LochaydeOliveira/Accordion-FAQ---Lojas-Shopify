@@ -1,0 +1,58 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #b5eaff;
+}
+.accordion-faq-heliva {
+    max-width: 800px;
+}
+.accordion-faq-heliva .content-faq {
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion-faq-heliva .content-faq .label-faq {
+    position: relative;
+    padding: 10px;
+    background: #2177a8;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.accordion-faq-heliva .content-faq .label-faq::before {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    transform: translate(-50%);
+    font-size: 1.5em ;
+    font-weight: bold;
+}
+.accordion-faq-heliva .content-faq .content-faq-inner{
+   position: relative; 
+   padding: 0 10px;
+   background: #fff;
+   height: 0;
+   overflow: hidden;
+   transition: 0.5s;
+   overflow-y: auto;
+}
+
+.accordion-faq-heliva .content-faq.active .content-faq-inner{
+    padding: 10px;
+    background: #fff;
+    height: auto;
+ }
+
+ .accordion-faq-heliva .content-faq.active .label-faq::before {
+    content: '';
+}
